@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tableContainer {
   display: flex;
+  border-bottom: 1px solid #f5efef;
+  padding: 10px;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.tableTitle {
+  font-weight: bold;
+
+}
+
+.tableColumn {
+  font-size: 12px;
+}
+
+.stockPrice {
+  font-weight: bold;
+}
+
+.rateContainer {
+  display: flex;
+  align-items: flex-start;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 121px;
 }
 
-.App-link {
-  color: #61dafb;
+.progressContainer {
+  display: flex;
+  font-size: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dollarValue {
+  color: red;
+  padding-right: 10px;
+  min-width: 50px;
+}
+
+.percentageChange {
+  color: red;
+  padding-right: 10px;
 }
